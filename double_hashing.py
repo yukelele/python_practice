@@ -3,12 +3,9 @@ DEFINE_PRIME = 7
 
 class DoubleHash:
 
-    hashTable = [-1]*DEFINE_TABLE_SIZE
-    curr_size = 0
-
-#    def __init__(self):
-#        self.hashTable = hashTable
-#        self.curr_size = curr_size
+    def __init__(self):
+        self.hashTable = [-1]*DEFINE_TABLE_SIZE
+        self.curr_size = 0
         
     def isFull(self):
         return (self.curr_size == DEFINE_TABLE_SIZE)
