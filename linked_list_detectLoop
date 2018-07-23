@@ -30,6 +30,16 @@ class LinkedList:
             print("No Cycle")
             return False
 
+        def reverseLinkedList(self):
+            prev = None 
+            current = self.head 
+            while(current is not None):
+                next = current.next
+                current.next = prev
+                prev = current
+                current = next
+            self.head = prev 
+
 ##########################
 
 llist = LinkedList()
@@ -37,5 +47,8 @@ llist.push(20)
 llist.push(4)
 llist.push(15)
 llist.push(10)
-llist.head.next.next.next.next = llist.head
+#llist.head.next.next.next.next = llist.head
 print(llist.detectLoop())
+llist.printList()
+llist.reverseLinkedList()
+llist.printList()
