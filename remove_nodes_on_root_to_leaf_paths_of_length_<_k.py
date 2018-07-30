@@ -17,7 +17,7 @@ def removeShortPathNodesUtil(root, level, k):
     # If root is a leaf node and its level is less than k then remove this node
     # this goes up and check for the ancestor nodes also for the same condition till it finds a node which is a part of other path(s) too 
     if root.left == None and root.right == None and level < k:
-        root = None
+        del root
         return None
     
     return root

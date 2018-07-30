@@ -30,6 +30,8 @@ def topView(root):
         if node.right != None:
             q.append( (node.right, val + 1 ))
 
+            
+
 
 root = Node(1)
 root.left = Node(2)
