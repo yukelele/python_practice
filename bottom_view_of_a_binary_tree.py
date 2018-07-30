@@ -33,7 +33,7 @@ def bottomView(root):
             temp.right.hd = hd + 1
             q.append(temp.right)
 
-    for x in sorted(m):
+    for x in sorted(m):                 # dict is not sorted. sorted(m) will make time complexity into O(nlog(n))
         print(m[x], end=" ")
     print("")
 
