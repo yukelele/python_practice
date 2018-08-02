@@ -1,6 +1,4 @@
 def isSubset(arr1, arr2):
-    #m = len(arr1)
-    #n = len(arr2)
     hash = {}
     for i in arr1:
         hash[i] = i
